@@ -1,0 +1,26 @@
+header{
+    background-color: blueviolet;
+    width: 100%;
+    padding: 10 100 10 100%;
+    border:1px solid #c0c0c0;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: initial;
+    font-size: x-large;
+
+}
+.inicio{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.main{
+    text-align: left;
+    background-color: antiquewhite;
+    height: 300px;
+    font-size: 24px;
+}
