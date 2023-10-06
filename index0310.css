@@ -1,8 +1,9 @@
 header{
-    background-color: blueviolet;
     width: 100%;
     padding: 10 100 10 100%;
     border:1px solid #c0c0c0;
+    position: static;
+    background-image: url("img/sorveteheader.png");
 }
 .menu{
     display: flex;
@@ -20,7 +21,37 @@ header{
 }
 .main{
     text-align: left;
-    background-color: antiquewhite;
     height: 300px;
     font-size: 24px;
+    display: flex;
+    align-items: stretch
+    
+}
+footer{
+    background-color: hsl(271, 45%, 66%);
+    width: 100%;
+    padding: 10 100 10 100%;
+    text-align: center;
+    position: static;
+    
+}
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    vertical-align: top;
 }
