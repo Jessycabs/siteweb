@@ -51,8 +51,13 @@ footer {
 
 
 iframe {
-    width: 50%;
-    height: 25%;
+    width: 80%;
+    height: 50%;
     display: flex;
     align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul.conteudo li{
+    background-color: blanchedalmond;
 }
