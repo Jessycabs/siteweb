@@ -1,9 +1,9 @@
 header{
     width: 100%;
-    padding: 10 100 10 100%;
+    padding: 15 100 15 100%;
     border:1px solid #c0c0c0;
     position: static;
-    background-image: url("img/sorveteheader.png");
+    background-color: hsl(271, 45%, 66%);
 }
 .menu{
     display: flex;
@@ -44,6 +44,7 @@ img{
     padding: 0;
     height: 100vh;
     width: 100vw;
+    top: 50px;
 
 }
 
