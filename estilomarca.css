@@ -3,7 +3,7 @@ header {
     padding: 10 100 10 100%;
     border: 1px solid #c0c0c0;
     position: static;
-    background-image: url("img/ab.png");
+    background-color: hsl(271, 45%, 66%);
 }
 
 .menu {
@@ -26,7 +26,6 @@ header {
     text-align: left;
     font-size: 24px;
     display: flex;
-    align-items: stretch;
     font-family: 'Times New Roman', Times, serif;
 
 }
@@ -40,6 +39,14 @@ footer {
     position: static;
 }
 
+.fonte {
+    display: flex;
+    align-self: flex-end;
+    justify-content: last baseline;
+    font-size: xx-small;
+}
+
+/* individual */
 .conteudo {
     display: flex;
     justify-content: center;
@@ -47,22 +54,18 @@ footer {
     text-align: center;
     width: 100%;
     font-size: x-large;
-    
+
 
 }
 
-.fonte {
-    display: flex;
-    align-self: flex-end;
-    justify-content: last baseline;
-    font-size: xx-small;
-}
-img{
+
+img {
     width: 50%;
     height: 25%;
     display: flex;
     align-self: center;
 }
-ol{
+
+ol {
     background-color: blanchedalmond;
 }
