@@ -4,159 +4,38 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Sorvete</title>
+    <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='estiloindex.css'>
+
     <script src='main.js'></script>
 </head>
-<style>
-    .carrossel {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-        width: 100vw;
-        top: 50px;
-
-    }
-
-    .content {
-        height: 520px;
-        width: 700px;
-        border-radius: 20px;
-        overflow: hidden;
-        position: absolute;
-        top: 80%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .navigation {
-        position: absolute;
-        bottom: -20%;
-        left: 50%;
-        transform: translate(-50%);
-        display: flex;
-    }
-
-    .bar {
-        width: 70px;
-        height: 17px;
-        border: 2px solid rgb(223, 154, 240);
-        margin: 6px;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: .6s;
-    }
-
-    .bar:hover {
-        background-color: rgb(226, 143, 247);
-
-    }
-
-    input {
-        display: none;
-    }
-
-    .slides {
-        display: flex;
-        width: 500%;
-        height: 100%;
-        top: 50%;
-    }
-
-    .slide {
-        width: 20%;
-        transition: .6s;
-    }
-
-    .slide img {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    #slide1:checked~.s1 {
-        margin-left: 0;
-    }
-
-    #slide2:checked~.s1 {
-        margin-left: -20%;
-    }
-
-    #slide3:checked~.s1 {
-        margin-left: -40%;
-    }
-</style>
 
 <body>
-    <div>
-        <header>
-            <h1 class="inicio"><a href="index.html">
-                    <font color="white">SORVETE</font>
-            </h1>
-            <ul class="menu">
-                <li><a href="historia.html">
-                        <font color="white">Hitória</font>
-                    </a></li>
-                <li><a href="fabricacao.html">
-                        <font color="white">Fabricação</font>
-                    </a></li>
-                <li><a href="marcas.html">
-                        <font color="white">Marcas</font>
-                    </a></li>
-                <li><a href="sobre.html">
-                        <font color="white">Sobre</font>
-                    </a></li>
-            </ul>
-        </header>
-        <article class="main">
-            O significado da palavra “sorvete” varia de país para país. A legislação local regulamenta os
-            nomes comerciais e as quantidades relativas de cada ingrediente. Alimentos congelados à base de emulsão de
-            gordura do leite são frequentemente chamados de “sorvetes” no Brasil, enquanto em Portugal é utilizado o
-            termo “gelato”. Em ambos os países, o mesmo termo também é usado para se referir a uma grande variedade de
-            sorvetes, embora sejam feitos de água e não de leite. Em Portugal, gelato refere-se a um tipo específico de
-            gelado feito a partir de puré e calda de fruta, sem adição de gordura butírica. No Brasil, o mesmo tipo
-            de produto é chamado de sorvete. O termo também é usado em alguns países para distinguir produtos de
-            frutas congeladas que não contêm leite ou ovos, como o sorvete francês ou o sorvete italiano.
-            <p class="fonte"><a href="https://pt.wikipedia.org/wiki/Sorvete">fonte</a></p>
-        </article>
-
-        <h1>Curiosidades</h1>
-        <div class="carrossel">
-            <div class="content">
-                <div class="slides">
-                    <input type="radio" name="slide" id="slide1" checked>
-                    <input type="radio" name="slide" id="slide2">
-                    <input type="radio" name="slide" id="slide3">
-
-                    <div class="slide s1">
-                        <img src="img/slide1.png" alt="scream">
-                    </div>
-                    <div class="slide">
-                        <img src="img/slide2.png" alt="scream">
-                    </div>
-                    <div class="slide">
-                        <img src="img/slide3.png" alt="scream">
-                    </div>
-                </div>
-            </div>
-
-            <div class="navigation">
-
-                <label class="bar" for="slide1"></label>
-                <label class="bar" for="slide2"></label>
-                <label class="bar" for="slide3"></label>
-            </div>
-        </div>
+    <section style="background-color: rgb(250, 174, 250); text-align: center; ">
+        javascript aula
+    </section>
+    <div id="botoes" style="display: flex; justify-content: space-around; padding: 10px 20px ;">
+        <input type="button" value="Botão 1" style= "height: 70px;" onclick = "btn1()">
+        <input type="button" value="Botão 2" onclick="btn2()">
+        <input type="button" value="Botão 3" onfocus="btn3()">
+        <input type="button" value="Botão 4" onmouseover="btn4()">
     </div>
-    <p class="fonte"><a href="https://sorvetesbambi.com.br/dicas-receitas/7-curiosidades-sobre-o-sorvete/">fonte</a></p>
-
-    <footer class="footer">
-        <h1>CONTATO</h1>
-        E-mail: ana.jessyca@aluno.ifsp.edu.br <br> <br>
-        ©2023. Todos os direitos resevados.
-    </footer>
+    <div id="resultados" style="background-color: rgb(245, 171, 226); text-align: center;">
+        <h1>resultados</h1>
+        <p id="saida"></p>
     </div>
+    <hr>
+    <h1>Datas</h1>
+     <input type="text" id="dia">  <!--value="10"-->
+    <input type="button" value="Pagar dia" onclick="getdia()">
+    <input type="button" value="Pagar data" onclick="exibirDataAtual()">
+    <input type="button" value="Data Formatada"  onclick="exibirDataFormatada()">
+    <p id="dataFormatada"></p>
+
+    <input type="date" id="data1">
+    <input type="date" id="data2">
+    <input type="button" onclick="caucularDiferenca()" value="Caucular">
+    <p id="diferenca"></p>
 </body>
 
 </html>
